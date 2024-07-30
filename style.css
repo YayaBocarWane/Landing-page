@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1500px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 100px;
+  font-weight: 200;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-nav li {
+  margin-left: 1rem;
+}
+
+.navbar-nav a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav a:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 2rem;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(image/Background1.jpeg) no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+.inner img {
+  border-radius: 25px;
+  width: 180px;
+  height: 15vh;
+}
+.inner,
+h3 {
+  background-color: #555;
+}
+.inner,
+h3,
+p {
+  color: #fff;
+}
+.wrapper-section {
+  width: 100%;
+  height: 400px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding-top: 60px;
+  text-align: center;
+}
+.wrapper-img {
+  color: black;
+  font-weight: 100;
+  font-size: 15px;
+  width: 150px;
+}
+.wrapper-img h4 {
+  margin-top: 10px;
+}
+.wrapper-img img {
+  width: 100%;
+  border: 2px solid #020c23;
+  border-radius: 260px;
+  padding: 50px;
+}
+.wrapper-img p {
+  color: black;
+}
+.section-immg {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.img-grid {
+  width: 360px;
+}
+.img-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+.section-immg img {
+  width: 100%;
+}
+.container-section {
+  background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+  text-align: center;
+  /* width: 100%; */
+  height: 30vh;
+  padding: 40px;
+  font-style: initial;
+  /* margin-top: 8rem; */
+}
+.container-section .lettre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: black;
+  font-weight: 800;
+  font-size: small;
+}
+.container-section h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.container-section .lettre p {
+  color: black;
+  font-weight: 400;
+  font-size: medium;
+}
+.container-statistics {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  color: black;
+  padding-top: 80px;
+}
+.container-statistics h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.container-statistics p {
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* _________________________creation de la progress bar__________________  */
+.container-progress-bar {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  color: black;
+  margin-top: -30%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 40px;
+}
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 16px;
+}
+.progress-bar {
+  background: gray;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  /* background: #020c23; */
+}
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #020c23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pratique {
+  width: 20%;
+  background: #020c23;
+  animation: pratique 1s linear forwards;
+}
+.opportunites {
+  background: #020c23;
+  animation: opportunites 1s linear forwards;
+}
+.Bakelistes-inseres {
+  background: #020c23;
+  animation: Bakelistes-inseres 1s linear forwards;
+}
+.autres {
+  background: #020c23;
+  animation: autres 1s linear forwards;
+}
+.pratique span {
+  border: 1px solid #020c23;
+}
+.opportunites span {
+  border: 1px solid #020c23;
+}
+.Bakelistes-inseres span {
+  border: 1px solid #020c23;
+}
+.autres span {
+  border: 1px solid #020c23;
+}
+@keyframes pratique {
+  100% {
+    width: 100%;
+  }
+}
+@keyframes opportunites {
+  100% {
+    width: 90%;
+  }
+}
+@keyframes Bakelistes-inseres {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes autres {
+  100% {
+    width: 70%;
+  }
+}
+.notre-team-container {
+  background-color: #020c23;
+  text-align: center;
+  height: 100vh;
+  padding: 2rem;
+}
+.notre-team-container h2 {
+  color: #fff;
+}
+.notre-team-container p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial;
+}
+.notre-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem;
+}
+.intel-5 {
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+.intel-5 h2 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.intel-5 img {
+  width: 5%;
+}
+.intel-5 p {
+  color: black;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2rem;
+}
+.intel-5 .pp {
+  font-size: 15px;
+  font-weight: 800;
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+  /* height: 100vh; */
+  text-align: center;
+  padding: 4rem;
+}
+footer h2 {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer p {
+  color: black;
+  /* padding: 20rem; */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.complementation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .wrapper-section {
+    height: auto;
+    padding: 30px 0;
+  }
+  .container-section .lettre {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .img-grid {
+    width: 100%;
+  }
+  .progress-bar {
+    width: 300px;
+  }
+  .notre-team-container {
+    height: auto;
+  }
+  .intel-5 img {
+    width: 10%;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .complementation {
+    flex-wrap: wrap;
+  }
+}
